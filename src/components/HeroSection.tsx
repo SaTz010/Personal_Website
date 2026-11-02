@@ -20,12 +20,12 @@ const HeroSection = ({ casual, onModeChange }: HeroSectionProps) => (
     <motion.div key={casual ? "casual" : "work"} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}>
       <p className="text-xs sm:text-sm tracking-wide text-muted-foreground mb-4 sm:mb-6">Sanskar Ananta Tiwari · {casual ? "Off the clock" : "Software engineer"} · Kathmandu</p>
       <h1 className="landing-headline heading-display text-[clamp(2rem,9vw,2.75rem)] sm:text-6xl lg:text-8xl leading-[1.08] tracking-tight max-w-4xl mb-6 sm:mb-8 text-balance">
-        {casual ? <>A few rounds.<br /><span className="text-primary">A few reps.</span></> : <>Mobile & web.<br />Ideas into products.</>}
+        {casual ? <>A few rounds.<br /><span className="text-primary">A few reps.</span></> : <>I ask why.<br />Then I build.</>}
       </h1>
       <p className="font-serif text-lg sm:text-2xl lg:text-3xl leading-relaxed max-w-3xl text-foreground">
         {casual
           ? "Away from work, I'm usually in a VALORANT lobby, at the gym, or watching football, cricket, Formula 1, and esports. A few trophies have found their way home, too."
-          : "I build mobile, web, and AI-enabled products, bringing product management experience to engineering decisions. My work spans corporate wellness and Nepali-language learning."}
+          : "I'm Sanskar, a software engineer and former Product Lead. I connect product thinking with hands-on engineering to build useful software."}
       </p>
       <div className="grid gap-3 mt-6 sm:flex sm:flex-wrap sm:gap-4 sm:mt-10">
         <a href={casual ? "#outside-work" : "#projects"} className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-6 py-3 min-h-12 rounded hover:bg-link-red-hover transition-colors">
