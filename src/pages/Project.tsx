@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import type { Project as ProjectDetails } from "@/data/projects";
 
 const Project = ({ project }: { project: ProjectDetails }) => (
@@ -32,8 +33,16 @@ const Project = ({ project }: { project: ProjectDetails }) => (
               <img key={screenshot.src} src={screenshot.src} alt={screenshot.alt} width="1206" height="2622" loading="lazy" className="w-[85%] shrink-0 snap-center h-auto border border-border rounded sm:w-full" />
             ))}
           </div>
-          <figcaption className="text-xs text-muted-foreground leading-relaxed mt-4">
-            Preview screenshots for the upcoming Hamro Bhasha update. Product screens show the wider team's work.
+          <figcaption className="mt-4">
+            <p className="text-xs text-muted-foreground leading-relaxed">Preview screenshots for the upcoming Hamro Bhasha update. Product screens show the wider team's work.</p>
+            <p className="font-serif text-xl sm:text-2xl mt-6">Explore more in the app.</p>
+            <div className="flex flex-wrap gap-3 mt-4">
+              {project.links.map((link) => (
+                <Button key={link.href} asChild variant="outline" size="lg">
+                  <a href={link.href} target="_blank" rel="noopener noreferrer">Download on {link.label}<ArrowUpRight className="w-4 h-4" aria-hidden="true" /></a>
+                </Button>
+              ))}
+            </div>
           </figcaption>
         </figure>
       )}
