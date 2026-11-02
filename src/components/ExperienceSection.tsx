@@ -16,7 +16,7 @@ const ExperienceSection = () => (
     </div>
     <div className="border-b border-border py-8">
       <div className="flex flex-col sm:flex-row sm:justify-between gap-3 mb-4">
-        <h3 className="font-serif text-2xl md:text-3xl">Product Manager</h3>
+        <h3 className="font-serif text-2xl md:text-3xl">Product Lead</h3>
         <p className="text-sm text-muted-foreground sm:pt-2">September 2024–August 2025</p>
       </div>
       <p className="text-primary mb-4">Meltdown Nepal Pvt. Ltd. · Kathmandu</p>

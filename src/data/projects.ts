@@ -62,7 +62,7 @@ export const projects: Project[] = [
       { label: "App Store", href: "https://apps.apple.com/np/app/meltdown-employee-wellbeing/id6445954625" },
       { label: "Visit website", href: "https://meltdownnepal.com/" },
     ],
-    note: "Built under Meltdown Nepal. My Product Manager role ran from September 2024 to August 2025; the broader platform was a team effort.",
+    note: "Built under Meltdown Nepal. My Product Lead role ran from September 2024 to August 2025; the broader platform was a team effort.",
   },
   {
     slug: "speech-research",
