@@ -38,8 +38,13 @@ export const projects: Project[] = [
     ],
     note: "Professional work at Gyawali Technologies LLC, July 2026–present. The repository belongs to my employer; this page describes my contributions.",
     screenshots: [
-      { src: "/projects/hamro-bhasa-learning.png", alt: "Hamro Bhasha number learning menu with Learn, Matching, Quiz, and Trace activities" },
-      { src: "/projects/hamro-bhasa-practice.png", alt: "Hamro Bhasha matching exercise pairing Nepali vowels with illustrated objects" },
+      { src: "/projects/hamro-bhasa-dashboard.webp", alt: "Hamro Bhasha dashboard showing learning progress, streaks, and lessons with Yeti" },
+      { src: "/projects/hamro-bhasa-family-learning.webp", alt: "Hamro Bhasha family vocabulary lesson with Nepali words, illustrations, and audio" },
+      { src: "/projects/hamro-bhasa-matching.webp", alt: "Hamro Bhasha matching activity pairing Nepali family words with their meanings" },
+      { src: "/projects/hamro-bhasa-voice-practice.webp", alt: "Hamro Bhasha voice practice with listening and speaking prompts" },
+      { src: "/projects/hamro-bhasa-tracing.webp", alt: "Hamro Bhasha handwriting practice with a Nepali word and writing canvas" },
+      { src: "/projects/hamro-bhasa-games.webp", alt: "Hamro Bhasha games featuring Yeti Says, Flip It, and Yeti Shopping" },
+      { src: "/projects/hamro-bhasa-stories.webp", alt: "Hamro Bhasha story library with illustrated Nepali stories and Yeti" },
     ],
   },
   {

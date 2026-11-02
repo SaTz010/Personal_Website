@@ -29,11 +29,11 @@ const Project = ({ project }: { project: ProjectDetails }) => (
         <figure className="mb-16">
           <div role="group" aria-label="App screenshots" tabIndex={0} className="flex gap-4 overflow-x-auto snap-x snap-mandatory bg-secondary/50 p-4 rounded sm:grid sm:grid-cols-2 sm:gap-8 sm:p-8">
             {project.screenshots.map((screenshot) => (
-              <img key={screenshot.src} src={screenshot.src} alt={screenshot.alt} width="600" height="1299" loading="lazy" className="w-[85%] shrink-0 snap-center h-auto border border-border rounded sm:w-full" />
+              <img key={screenshot.src} src={screenshot.src} alt={screenshot.alt} width="1206" height="2622" loading="lazy" className="w-[85%] shrink-0 snap-center h-auto border border-border rounded sm:w-full" />
             ))}
           </div>
           <figcaption className="text-xs text-muted-foreground leading-relaxed mt-4">
-            App screenshots from the <a className="link-external underline" href={project.links[0].href} target="_blank" rel="noopener noreferrer">public Google Play listing</a>. Product screens show the wider team's work.
+            Preview screenshots for the upcoming Hamro Bhasha update. Product screens show the wider team's work.
           </figcaption>
         </figure>
       )}
