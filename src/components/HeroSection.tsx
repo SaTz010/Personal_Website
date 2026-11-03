@@ -17,7 +17,7 @@ const HeroSection = ({ casual, onModeChange }: HeroSectionProps) => (
         <Button type="button" variant={casual ? "default" : "ghost"} aria-pressed={casual} onClick={() => onModeChange(true)} className="h-11 min-w-0 rounded-full px-2 sm:px-4 text-xs sm:text-sm"><Gamepad2 aria-hidden="true" />Just exploring</Button>
       </div>
     </div>
-    <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(15rem,0.48fr)] lg:items-center lg:gap-12 xl:gap-20">
+    <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(15rem,0.48fr)] xl:grid-cols-[minmax(0,1fr)_minmax(20rem,0.7fr)] lg:items-center lg:gap-12 xl:gap-12">
       <motion.div key={casual ? "casual" : "work"} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}>
         <p className="text-xs sm:text-sm tracking-wide text-muted-foreground mb-4 sm:mb-6">Sanskar Ananta Tiwari · {casual ? "Off the clock" : "Software engineer"} · Kathmandu</p>
         <h1 className="landing-headline heading-display text-[clamp(2rem,9vw,2.75rem)] sm:text-6xl lg:text-8xl leading-[1.08] tracking-tight max-w-4xl mb-6 sm:mb-8 text-balance">
@@ -37,16 +37,15 @@ const HeroSection = ({ casual, onModeChange }: HeroSectionProps) => (
           </Link>
         </div>
       </motion.div>
-      <svg viewBox="0 0 320 320" aria-hidden="true" focusable="false" className="group hidden w-full max-w-[22rem] justify-self-end text-primary lg:block">
+      <svg viewBox="0 0 320 320" aria-hidden="true" focusable="false" className="group hidden w-full max-w-[28rem] justify-self-end text-primary lg:block">
         <defs>
-          <path id="hero-name-ring" d="M 160,32 a 128,128 0 1,1 0,256 a 128,128 0 1,1 0,-256" />
+          <path id="hero-name-ring" d="M 160,16 a 144,144 0 1,1 0,288 a 144,144 0 1,1 0,-288" />
         </defs>
         <g className="origin-center motion-safe:animate-[spin_36s_linear_infinite] group-hover:[animation-play-state:paused]">
           <text fill="currentColor" fontSize="18" fontWeight="500" letterSpacing="3">
-            <textPath href="#hero-name-ring" textLength="790" lengthAdjust="spacing">SANSKAR ANANTA TIWARI · SANSKAR ANANTA TIWARI ·</textPath>
+            <textPath href="#hero-name-ring" textLength="890" lengthAdjust="spacing">SANSKAR ANANTA TIWARI · SANSKAR ANANTA TIWARI ·</textPath>
           </text>
         </g>
-        <text x="160" y="160" dy=".3em" textAnchor="middle" fill="currentColor" fontSize="96" className="font-serif">s</text>
       </svg>
     </div>
   </section>
