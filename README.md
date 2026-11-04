@@ -24,6 +24,12 @@ Two selected Hamro Bhasha App Store previews show the dashboard and voice practi
 
 Profile, experience, education, and project content draw on the supplied CV and prior profile details. Meltdown's website project is included based on the user's confirmation, with company context from https://meltdownnepal.com/. Research and AURA are marked ongoing.
 
+## Cloudflare Workers
+
+Cloudflare Workers Builds builds and deploys each push to `main` at https://personal-website.tiwarisanskar123.workers.dev. The connected project is `personal-website`, with build command `npm run build` and deploy command `npx wrangler deploy`.
+
+`wrangler.jsonc` publishes only `dist` and enables single-page application routing so direct links to profile, contact, and project pages render the React app.
+
 ## GitHub Pages
 
 GitHub Actions builds and deploys the website after each push to `main`. The workflow can also be started manually from the Actions tab. GitHub Pages must use **GitHub Actions** as its source, with **sanskart.com.np** as the custom domain in Settings > Pages.
