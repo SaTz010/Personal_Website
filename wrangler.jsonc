@@ -1,6 +1,14 @@
 {
   "name": "personal-website",
   "compatibility_date": "2026-11-04",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "sanskart.com.np",
+      "zone_name": "sanskart.com.np",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./dist",
     "not_found_handling": "single-page-application"

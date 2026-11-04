@@ -26,24 +26,8 @@ Profile, experience, education, and project content draw on the supplied CV and 
 
 ## Cloudflare Workers
 
-Cloudflare Workers Builds builds and deploys each push to `main` at https://personal-website.tiwarisanskar123.workers.dev. The connected project is `personal-website`, with build command `npm run build` and deploy command `npx wrangler deploy`.
+Cloudflare Workers Builds builds and deploys each push to `main` at https://sanskart.com.np. The deployment is also available at https://personal-website.tiwarisanskar123.workers.dev. The connected project is `personal-website`, with build command `npm run build` and deploy command `npx wrangler deploy`.
 
 `wrangler.jsonc` publishes only `dist` and enables single-page application routing so direct links to profile, contact, and project pages render the React app.
 
-## GitHub Pages
-
-GitHub Actions builds and deploys the website after each push to `main`. The workflow can also be started manually from the Actions tab. GitHub Pages must use **GitHub Actions** as its source, with **sanskart.com.np** as the custom domain in Settings > Pages.
-
-The Vite asset base stays `/` because the site uses a custom domain. Deployment copies the app entry to `404.html` so direct links to profile, contact, and project pages still render the React app.
-
-Cloudflare manages DNS. Use these records with **DNS only** (grey cloud) and TTL **Auto**:
-
-| Type | Name | Content |
-| --- | --- | --- |
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | satz010.github.io |
-
-Replace conflicting website records at `@` and `www`; preserve unrelated DNS and email records. Enable **Enforce HTTPS** in GitHub Pages once GitHub has issued the domain certificate.
+The custom domain is declared in `wrangler.jsonc`. Cloudflare manages its DNS record and HTTPS certificate through Workers Custom Domains.
